@@ -1,18 +1,5 @@
 
 
-function fecha_abre1(){
-    
-    document.getElementById("acessibilidade-hid").style.visibility="visible";
-    document.getElementById("acessibilidade").style.visibility="hidden";
-}
-
-function fecha_abre2(){
-    
-    document.getElementById("acessibilidade-hid").style.visibility="hidden";
-    document.getElementById("acessibilidade").style.visibility="visible";
-    document.querySelector(".acess1-fake").style.visibility="hidden";
-}
-
 class MobileNavbar {
     constructor(mobileMenu, navList, navLinks) {
       this.mobileMenu = document.querySelector(mobileMenu);
@@ -32,7 +19,6 @@ class MobileNavbar {
             }s`);
       });
     }
-    
 
     handleClick() {
       this.navList.classList.toggle(this.activeClass);
@@ -58,5 +44,4 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init(); 
-
 
